@@ -10,7 +10,6 @@ from responses import get_response
 #load token
 load_dotenv()
 TOKEN: Final[str] = os.getenv('DISCORD_TOKEN')
-print(TOKEN)
 
 bot = commands.Bot(command_prefix="!", intents=Intents.default())
 
